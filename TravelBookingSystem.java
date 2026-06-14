@@ -116,11 +116,10 @@ public class TravelBookingSystem {
   public void searchFlight() {
 
     System.out.print("Origin: ");
-    String origin = scanner.nextLine();
+    String origin = scanner.nextLine().trim();
 
     System.out.print("Destination: ");
-    String destination = scanner.nextLine();
-
+    String destination = scanner.nextLine().trim();
     boolean found = false;
 
     for (Flight flight : flights) {
